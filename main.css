@@ -1,0 +1,58 @@
+:root{
+  --main-font-green : #1ed760;
+}
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: black;
+  color:#fff;
+}
+div.container{
+  border:1px solid gray;
+  width:90%;
+  height:100%;
+  margin:0 auto;
+}
+header{
+  height:80px;
+}
+header div{
+  height:100%;
+}
+.logoDiv{
+  width:130px;
+}
+.topBtnUl{
+  display:flex;
+  float:right;
+  height:100%;
+  font-size:1.1rem;
+}
+.topBtnUl li:not(.topBar){
+  cursor: pointer;
+}
+.topBtnUl li:not(.topBar):hover,
+.topBtnUl li:not(.topBar):focus,
+.topBtnUl li:not(.topBar):focus-visible {
+  color : var(--main-font-green);
+}
+.topBtnUl li.topBar{
+  align-items: center;
+}
+main section{
+  height:500px;
+}
+.firstSection{
+  background-image:url("./assets/desktop-album-evergreen-1x.png"),
+  linear-gradient(180deg, rgba(255,210,215,1) 0%,rgba(0,0,0,0) 35%);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.firstSection > div > div{
+  border:1px solid green;
+  height:100%;
+  width:50%;
+}
+.firstSection > div > div h1{
+  font-size: 2.5rem;
+  line-height:110%;
+}
