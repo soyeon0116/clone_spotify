@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./main.css">
   <title>Spotify</title>
 </head>
@@ -43,10 +44,92 @@
   <main>
     <section class="firstSection">
       <div class="container">
-        <div class="p-5">
+        <div class="p-5 verticalCenter">
           <h1 class="font-black">제한 없이 감상하세요.</br> ₩0에 1개월 동안 Premium 개인 요금제를 이용해보세요.</h1>
           <h2 class="mt-5">이후에는 ₩10,900(부가세 별도)/월이 부과됩니다. 언제든 해지 가능합니다.</h2>
+          <div class="firstBtnWrap my-4">
+            <button class="mr-5 rounded-full px-5 py-3 bg-(--main-pink) border border-(--main-pink) text-stone-900 font-bold hover:bg-white hover:text-stone-900">시작하기</button>
+            <button class="rounded-full px-5 py-3 border border-white font-bold hover:bg-white hover:text-stone-900">모든 요금제 보기</button>
+          </div>
+          <p class="smallFont">1개월 이용 시 ₩0, 이후 매월 ₩10,900(부가세 별도)입니다. Premium 구독 이력이 없는 사용자만 혜택을 이용할 수 있습니다. </br><a class="pointer underline underline-offset-2">약관이 적용됩니다.</a></p>
         </div>
+        
+      </div>
+    </section>
+    <section class="secondSection">
+      <div class="container place-items-center py-5">
+        <h1 class="font-bold">차이를 경험해보세요.</h1>
+        <h2 class="font-medium">Premium을 사용하여 마음껏 음악을 감상하세요. 언제든 해지 가능합니다.</h2>
+        <table class="border-collapse my-4 text-center" style="width:60%;">
+          <colgroup>
+            <col width="50%;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>제공되는 혜택</th>
+              <th>Spotify 무료 요금제</th>
+              <th>Spotify Premium 요금제</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr>
+              <td class="tooltip p-3">
+                수백만 개의 곡 감상
+                <span class="tooltiptext tooltip-right">여러분이 원하는 모든 음악이 있습니다.</span>
+              </td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td class="tooltip p-3">
+                무광고로 음악 감상하기
+                <span class="tooltiptext tooltip-right">중간 광고 없이 음악을 감상하세요.</span>
+              </td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td class="tooltip p-3">
+                다운로드하여 오프라인에서 감상
+                <span class="tooltiptext tooltip-right">Premium 베이직 : 다운로드하여 오프라인에서 감상할 수 없습니다. <br>그 외 요금제 : 앨범 및 플레이리스트를 다운로드하고 인터넷 없이도 콘텐츠를 즐겨보세요. 5개의 기기 각각 최대 10,000곡을 다운로드할 수 있습니다.</span>
+              </td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td class="tooltip p-3">
+                순서에 상관없이 재생
+                <span class="tooltiptext tooltip-right">완벽한 음악 감상 제어 : 곡을 반복 재생하고, 좋아하는 부분을 다시 듣고, 앨범 수록곡을 원하는 순서대로 감상할 수 있습니다.</span>
+              </td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td class="tooltip p-3">
+                뛰어난 음질
+                <span class="tooltiptext tooltip-right">Free 요금제 : 기본 음질 오디오(약 160kbit/s) <br>Premium 요금제 : 고품질 오디오 (약 320kbit/s)</span>
+              </td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td class="tooltip p-3">
+                친구와 함께 실시간으로 감상
+                <span class="tooltiptext tooltip-right">위치에 관계없이 누구나 초대할 수 있습니다. 친구와 함께 제어하세요. 친구와 함께 스피커에서 재생되는 음악을 듣고 제어할 수 있습니다.</span>
+              </td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+            <tr>
+              <td class="tooltip p-3">
+                재생목록 관리
+                <span class="tooltiptext tooltip-right">다음에 재생할 곡을 추가 또는 삭제하거나 순서를 바꿀 수 있습니다.</span>
+              </td>
+              <td>-</td>
+              <td><i class="fa-solid fa-circle-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   </main>

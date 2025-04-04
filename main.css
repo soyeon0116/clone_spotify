@@ -1,16 +1,57 @@
 :root{
   --main-font-green : #1ed760;
+  --main-pink : #ffd2d7;
+}
+.tooltip {
+  position: relative;
+  display: block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;      
+  width: 80%;             
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;       
+  z-index: 1;
+  font-size: 0.8rem;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;     
+}
+.tooltip .tooltip-right {
+  top: 5px;
+  left: 80%;
+}
+.tooltip .tooltip-right::after {
+  top: 50%;
+  right:100%;
+  margin-top: -5px;
+  border-color: transparent black transparent transparent;
 }
 body{
   font-family: "Noto Sans KR", sans-serif;
   background-color: black;
   color:#fff;
 }
+button, .pointer{
+  cursor: pointer;
+}
 div.container{
   border:1px solid gray;
   width:90%;
   height:100%;
   margin:0 auto;
+  position: relative;
+  left:0;
+  top:0;
+}
+div.container .verticalCenter {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
 }
 header{
   height:80px;
@@ -27,9 +68,6 @@ header div{
   height:100%;
   font-size:1.1rem;
 }
-.topBtnUl li:not(.topBar){
-  cursor: pointer;
-}
 .topBtnUl li:not(.topBar):hover,
 .topBtnUl li:not(.topBar):focus,
 .topBtnUl li:not(.topBar):focus-visible {
@@ -43,16 +81,32 @@ main section{
 }
 .firstSection{
   background-image:url("./assets/desktop-album-evergreen-1x.png"),
-  linear-gradient(180deg, rgba(255,210,215,1) 0%,rgba(0,0,0,0) 35%);
+  linear-gradient(180deg, var(--main-pink) 0%,rgba(0,0,0,0) 35%);
   background-repeat: no-repeat;
   background-position: right top;
 }
 .firstSection > div > div{
-  border:1px solid green;
-  height:100%;
   width:50%;
 }
 .firstSection > div > div h1{
   font-size: 2.5rem;
   line-height:110%;
+}
+.firstBtnWrap button{
+  transition: transform 0.3s ease-in-out;
+}
+.firstBtnWrap button:hover{
+  transform : scale(1.1);
+}
+.smallFont{
+  font-size: 0.7rem;
+}
+.secondSection h1{
+  font-size: 2.5rem;
+}
+.secondSection h2{
+  font-size: 1.5rem;
+}
+table td i {
+  font-size:1.5rem;
 }
