@@ -77,7 +77,11 @@ header div{
   align-items: center;
 }
 main section{
-  height:500px;
+  height:550px;
+}
+main section h1{
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 .firstSection{
   background-image:url("./assets/desktop-album-evergreen-1x.png"),
@@ -89,7 +93,6 @@ main section{
   width:50%;
 }
 .firstSection > div > div h1{
-  font-size: 2.5rem;
   line-height:110%;
 }
 .firstBtnWrap button{
@@ -101,12 +104,30 @@ main section{
 .smallFont{
   font-size: 0.7rem;
 }
-.secondSection h1{
-  font-size: 2.5rem;
-}
 .secondSection h2{
   font-size: 1.5rem;
 }
 table td i {
   font-size:1.5rem;
+}
+.secondSection table thead tr{
+  border-bottom:1px solid #fff;
+}
+.secondSection table tbody tr:hover{
+  background-color:#ffffff47;
+}
+.secondSection table tbody tr:hover td:last-child{
+  background-color:gray;
+}
+.thirdSection .cardSection{
+  width:100%;
+}
+.thirdSection .cardSection .imgWrap{
+  display:inline-flex;
+}
+.thirdSection .cardSection img{
+  width:50px;
+}
+.thirdSection .cardSection .hiddenImg{
+  width:30%
 }
