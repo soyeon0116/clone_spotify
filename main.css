@@ -76,18 +76,19 @@ header div{
 .topBtnUl li.topBar{
   align-items: center;
 }
-main section{
-  height:550px;
-}
 main section h1{
   font-size: 2.5rem;
   font-weight: bold;
+}
+main section h2{
+  font-size: 1.5rem;
 }
 .firstSection{
   background-image:url("./assets/desktop-album-evergreen-1x.png"),
   linear-gradient(180deg, var(--main-pink) 0%,rgba(0,0,0,0) 35%);
   background-repeat: no-repeat;
   background-position: right top;
+  height:550px;
 }
 .firstSection > div > div{
   width:50%;
@@ -104,9 +105,6 @@ main section h1{
 .smallFont{
   font-size: 0.7rem;
 }
-.secondSection h2{
-  font-size: 1.5rem;
-}
 table td i {
   font-size:1.5rem;
 }
@@ -121,13 +119,65 @@ table td i {
 }
 .thirdSection .cardSection{
   width:100%;
+  position: relative;
+  left:0;
+  top:0;
 }
 .thirdSection .cardSection .imgWrap{
   display:inline-flex;
 }
 .thirdSection .cardSection img{
-  width:50px;
+  width:40px;
+  height:30px;
 }
 .thirdSection .cardSection .hiddenImg{
-  width:30%
+  display:none;
+}
+.thirdSection .cardSection .showExImg{
+  display: inline;
+}
+.thirdSection .cardSection .showExImg:hover +  .hiddenImg{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+}
+.benefitDiv{
+  display:flex;
+  align-items: center;
+}
+.benefitDiv h2{
+  font-size: 1.5rem;
+}
+.paySection{
+  width:100%;
+}
+.paySection > div{
+  border:1px solid gray;
+  width:33%;
+  height:400px;
+}
+.paySection .personal{
+  position:relative;
+  left:0;
+  top:0;
+}
+.paySection .personal strong{
+  position:absolute;
+  left:0;
+  top:0;
+  background-color: var(--main-pink);
+}
+.paySection > div img{
+  width:40px;
+  display: inline-block;
+}
+.paySection > div p.smallFont{
+  font-size: 0.75rem;
+  color:gray;
+  line-height: 100%;
 }
