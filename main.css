@@ -1,6 +1,8 @@
 :root{
   --main-font-green : #1ed760;
   --main-pink : #ffd2d7;
+  --main-yellow : #ffc862;
+  --main-green: #cff56a;
 }
 .tooltip {
   position: relative;
@@ -180,4 +182,29 @@ table td i {
   font-size: 0.75rem;
   color:gray;
   line-height: 100%;
+}
+.hiddenDiv.hidden{
+  /* display:none; */
+  transform: scaleY(0);
+  overflow:hidden;
+  transition: transform 10s ease;
+}
+.hiddenDiv{
+  background-color: #1f1f1f;
+  transform: scaleY(1);
+}
+.questionDiv{
+  border-bottom:1px solid gray;
+  position:relative;
+  left:0;
+  top:0;
+}
+.questionDiv span{
+  position:absolute;
+  right:10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.questionDiv:hover{
+  background-color:#ffffff47;
 }
