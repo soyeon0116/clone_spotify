@@ -35,7 +35,7 @@
 }
 body{
   font-family: "Noto Sans KR", sans-serif;
-  background-color: black;
+  background-color: #121212;
   color:#fff;
 }
 button, .pointer{
@@ -183,15 +183,15 @@ table td i {
   color:gray;
   line-height: 100%;
 }
-.hiddenDiv.hidden{
-  /* display:none; */
-  transform: scaleY(0);
-  overflow:hidden;
-  transition: transform 10s ease;
+.hiddenDiv.show{
+  max-height: 1000px;
 }
 .hiddenDiv{
+  max-height: 0px;
+  padding:0 10px;
   background-color: #1f1f1f;
-  transform: scaleY(1);
+  overflow:hidden;
+  transition: all 2s;
 }
 .questionDiv{
   border-bottom:1px solid gray;
@@ -207,4 +207,14 @@ table td i {
 }
 .questionDiv:hover{
   background-color:#ffffff47;
+}
+.footerLogo{
+  width:110px;
+}
+.snsDiv p{
+  width:50px;
+  height:50px;
+}
+.snsDiv p i {
+  font-size:1.5rem;
 }
