@@ -20,28 +20,53 @@
 
 <body>
   <header>
-    <div class="container grid px-5">
+    <div class="container flex place-content-between">
       <div class="logoDiv py-5">
         <img src="./assets/Spotify_Logo_RGB_White.png" alt="spotify 로고">
       </div>
-      <div class="col-end-12">
-        <ul class="topBtnUl">
-          <li class="px-3 py-5 font-black flex align-center">
+      <ul class="topBtnUl">
+        <li class="px-3 py-5 font-black flex align-center">
+          <button class="topBtn">프리미엄</button>
+        </li>
+        <li class="px-3 py-5 font-black flex align-center">
+          <button class="topBtn">지원</button>
+        </li>
+        <li class="px-3 py-5 font-black flex align-center">
+          <button class="topBtn">다운로드</button>
+        </li>
+        <li class="px-3 py-5 font-black topBar flex">
+          ㅣ
+        </li>
+        <li class="px-3 py-5 font-black flex align-center">
+          <button class="topBtn">가입하기</button>
+        </li>
+        <li class="px-3 py-5 font-black flex align-center">
+          <button class="topBtn">로그인하기</button>
+        </li>
+      </ul>
+      <div class="mobileMenuDiv">
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="mobileUl">
+          <li class="px-3 py-5 font-black">
             <button class="topBtn">프리미엄</button>
           </li>
-          <li class="px-3 py-5 font-black flex align-center">
+          <li class="px-3 py-5 font-black">
             <button class="topBtn">지원</button>
           </li>
-          <li class="px-3 py-5 font-black flex align-center">
+          <li class="px-3 py-5 font-black">
             <button class="topBtn">다운로드</button>
           </li>
-          <li class="px-3 py-5 font-black topBar flex">
+          <li class="px-3 py-5 font-black topBar">
             ㅣ
           </li>
-          <li class="px-3 py-5 font-black flex align-center">
+          <li class="px-3 py-5 font-black">
             <button class="topBtn">가입하기</button>
           </li>
-          <li class="px-3 py-5 font-black flex align-center">
+          <li class="px-3 py-5 font-black">
             <button class="topBtn">로그인하기</button>
           </li>
         </ul>
@@ -51,7 +76,7 @@
   <main>
     <section class="firstSection">
       <div class="container">
-        <div class="p-5 verticalCenter">
+        <div class="verticalCenter">
           <h1>제한 없이 감상하세요.</br> ₩0에 1개월 동안 Premium 개인 요금제를 이용해보세요.</h1>
           <h2 class="mt-5">이후에는 ₩10,900(부가세 별도)/월이 부과됩니다. 언제든 해지 가능합니다.</h2>
           <div class="firstBtnWrap my-4">
@@ -185,7 +210,7 @@
           </ul>
         </div>
         <div class="paySection mb-4 px-4 flex gap-4">
-          <div class="personal rounded-lg text-left">
+          <div class="personal rounded-lg text-left bg-stone-800">
             <strong class="rounded-tl-lg rounded-br-lg px-2 py-1 text-stone-900">1개월 이용 시 ₩0</strong>
             <div class="p-2 pt-10">
               <p>
@@ -205,7 +230,7 @@
                 이용할 수 있습니다.<br><a class="pointer underline underline-offset-2">약관이 적용됩니다.</a></p>
             </div>
           </div>
-          <div class="duo rounded-lg text-left p-2 pt-10">
+          <div class="duo rounded-lg text-left p-2 pt-10 bg-stone-800">
             <p>
               <img src="./assets/spotify_logo.png" alt="">
               Premium
@@ -220,7 +245,7 @@
             <p class="smallFont mt-3 text-center">같은 주소지에 거주하는 커플용 요금제입니다.<br><a
                 class="pointer underline underline-offset-2">약관이 적용됩니다.</a></p>
           </div>
-          <div class="basic rounded-lg text-left p-2 pt-10">
+          <div class="basic rounded-lg text-left p-2 pt-10 bg-stone-800">
             <p>
               <img src="./assets/spotify_logo.png" alt="">
               Premium
@@ -286,8 +311,8 @@
     </section>
   </main>
   <footer class="bg-black">
-    <div class="container place-items-center py-10">
-      <div class="flex place-content-between w-full">
+    <div class="container py-10">
+      <div class="flex place-content-between footerFirstLink">
         <div class="footerLogo"><img src="./assets/Spotify_Logo_RGB_White.png" alt="spotify 로고"></div>
         <div class="flex gap-25">
           <ul>
@@ -316,11 +341,11 @@
             <li class="hover:text-(--main-font-green) pointer">Premium 듀오</li>
           </ul>
         </div>
-        <div class="snsDiv flex gap-4">
-          <p class="rounded-[50%] bg-stone-800 text-center pt-3 pointer"><i class="fa-brands fa-instagram"></i></p>
-          <p class="rounded-[50%] bg-stone-800 text-center pt-3 pointer"><i class="fa-brands fa-x-twitter"></i></p>
-          <p class="rounded-[50%] bg-stone-800 text-center pt-3 pointer"><i class="fa-brands fa-facebook"></i></p>
-        </div>
+      </div>
+      <div class="snsDiv flex gap-4">
+        <p class="rounded-[50%] bg-stone-800 text-center pt-3 pointer"><i class="fa-brands fa-instagram"></i></p>
+        <p class="rounded-[50%] bg-stone-800 text-center pt-3 pointer"><i class="fa-brands fa-x-twitter"></i></p>
+        <p class="rounded-[50%] bg-stone-800 text-center pt-3 pointer"><i class="fa-brands fa-facebook"></i></p>
       </div>
       <div class="text-sm text-stone-500">
         <div class="flex place-content-between my-10">
@@ -332,7 +357,8 @@
             <li class="hover:text-(--main-font-green) pointer">접근성</li>
           </ul>
           <div>
-            <p class="hover:text-(--main-font-green) pointer mb-5"><i class="fa-solid fa-earth-americas"></i> 대한민국(한국어)</p>
+            <p class="hover:text-(--main-font-green) pointer mb-5"><i class="fa-solid fa-earth-americas"></i> 대한민국(한국어)
+            </p>
             <p>© 2025 Spotify AB</p>
           </div>
         </div>
