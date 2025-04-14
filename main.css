@@ -5,6 +5,10 @@
   --main-green: #cff56a;
 }
 
+html{
+  scrollbar-gutter: stable;
+}
+
 .tooltip {
   position: relative;
   display: block;
@@ -271,6 +275,7 @@ footer .container {
   font-size: 1.5rem;
 }
 
+
 /*==========  Mobile First Method  ==========*/
 /* All Device */
 
@@ -286,6 +291,7 @@ footer .container {
     position: relative;
     left: 0;
     top: 0;
+    z-index:3;
   }
 
   .hamburger span {
@@ -319,11 +325,42 @@ footer .container {
     transform: rotate(-45deg);
     top:40px;
   }
+  
   .mobileUl{
     display:none;
   }
+  
   .hamburger.show + .mobileUl{
     display:block;
+    background-color: #000;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    z-index: 2;
+  }
+
+  .backColor {
+    background-color: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:1;
+  }
+
+  .hamburger.show ~ .backColor{
+    background-color: #000000bf
+  }
+
+  body:has(.hamburger.show){
+    overflow-y:hidden;
+  }
+
+  .lastLogo img{
+    width:100px;
   }
 
   .paySection {
