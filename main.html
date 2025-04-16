@@ -50,9 +50,12 @@
           <span></span>
           <span></span>
         </button>
-        <ul class="mobileUl">
-          <li class="p-3 mt-20 font-black hover:text-(--main-font-green) text-3xl">
+        <div class="mobileDiv">
+          <ul class="mobileUl">
+          <li class="p-3 mt-20 font-black text-3xl">
             <button class="topBtn">프리미엄</button>
+            <div class="bg-stone-500 rounded-sm p-4 m-4 text-sm font-medium pointer hover:bg-stone-800"><strong class="font-black">Premium 개인</strong><br>개인 사용자를 위한 계정 1개</div>
+            <div class="bg-stone-500 rounded-sm p-4 m-4 text-sm font-medium pointer hover:bg-stone-800"><strong class="font-black">Premium 듀오</strong><br>한 지붕 아래 사는 커플을 위한 계정 2개</div>
           </li>
           <li class="p-3 font-black hover:text-(--main-font-green) text-3xl">
             <button class="topBtn">지원</button>
@@ -69,10 +72,11 @@
           <li class="p-3 font-black hover:text-(--main-font-green) text-3xl">
             <button class="topBtn">로그인하기</button>
           </li>
-          <li class="px-3 lastLogo">
-            <img src="./assets/Spotify_Logo_RGB_White.png" alt="spotify 로고">
-          </li>
         </ul>
+        <div class="m-4">
+          <img src="./assets/Spotify_Logo_RGB_White.png" alt="spotify 로고">
+        </div>
+      </div>
         <div class="backColor"></div>
       </div>
     </div>
@@ -85,7 +89,7 @@
           <h2 class="mt-5">이후에는 ₩10,900(부가세 별도)/월이 부과됩니다. 언제든 해지 가능합니다.</h2>
           <div class="firstBtnWrap my-4">
             <button
-              class="mr-5 rounded-full px-5 py-3 bg-(--main-pink) border border-(--main-pink) text-stone-900 font-bold hover:bg-white hover:text-stone-900">시작하기</button>
+              class="rounded-full px-5 py-3 bg-(--main-pink) border border-(--main-pink) text-stone-900 font-bold hover:bg-white hover:text-stone-900">시작하기</button>
             <button class="rounded-full px-5 py-3 border border-white font-bold hover:bg-white hover:text-stone-900">모든
               요금제 보기</button>
           </div>
@@ -316,33 +320,33 @@
   </main>
   <footer class="bg-black">
     <div class="container py-10">
-      <div class="flex place-content-between footerFirstLink">
-        <div class="footerLogo"><img src="./assets/Spotify_Logo_RGB_White.png" alt="spotify 로고"></div>
-        <div class="flex gap-25">
+      <div class="place-content-between footerFirstLink">
+        <div class="footerLogo pb-4"><img src="./assets/Spotify_Logo_RGB_White.png" alt="spotify 로고"></div>
+        <div class="gap-25 footerList">
           <ul>
             <h3 class='text-stone-500 mb-4'>회사</h3>
             <li class="mb-2 hover:text-(--main-font-green) pointer">상세 정보</li>
             <li class="mb-2 hover:text-(--main-font-green) pointer">채용 정보</li>
-            <li class="hover:text-(--main-font-green) pointer">For the Record</li>
+            <li class="mb-2 hover:text-(--main-font-green) pointer">For the Record</li>
           </ul>
           <ul>
-            <h3 class='text-stone-500 mb-4'>커뮤니리</h3>
+            <h3 class='text-stone-500 mb-4'>커뮤니티</h3>
             <li class="mb-2 hover:text-(--main-font-green) pointer">아티스트</li>
             <li class="mb-2 hover:text-(--main-font-green) pointer">개발자</li>
             <li class="mb-2 hover:text-(--main-font-green) pointer">광고</li>
             <li class="mb-2 hover:text-(--main-font-green) pointer">투자자</li>
-            <li class="hover:text-(--main-font-green) pointer">공급업체</li>
+            <li class="mb-2 hover:text-(--main-font-green) pointer">공급업체</li>
           </ul>
           <ul>
             <h3 class='text-stone-500 mb-4'>유용한 링크</h3>
             <li class="mb-2 hover:text-(--main-font-green) pointer">지원</li>
             <li class="mb-2 hover:text-(--main-font-green) pointer">웹 플레이어</li>
-            <li class="hover:text-(--main-font-green) pointer">무료 모바일 앱</li>
+            <li class="mb-2 hover:text-(--main-font-green) pointer">무료 모바일 앱</li>
           </ul>
           <ul>
             <h3 class='text-stone-500 mb-4'>SPOTIFY 요금제</h3>
             <li class="mb-2 hover:text-(--main-font-green) pointer">Premium 개인</li>
-            <li class="hover:text-(--main-font-green) pointer">Premium 듀오</li>
+            <li class="mb-2 hover:text-(--main-font-green) pointer">Premium 듀오</li>
           </ul>
         </div>
       </div>
